@@ -6,19 +6,11 @@
 from prog01_useless_trivia import starbucks_addiction,kids,age_in_seconds,moon_weight,sun_weight
 from prog01_useful_calc import menu,tip_calculator,car_sale,salary,quit
 
-# Ask for the following inputs from the user remember to use the input function
-# "Hi. What is your first name? "
 first_name = input("Hi. What is your first name? ")
-# "What is your last name? "
 last_name = input("What is your last name? ")
-# "How old are you? "
-# REMEMBER your input needs to be in int; how do we cast an input to int
 age = int(input("How old are you? "))
-# "Okay, last question. How many pounds do you weight? "
-# REMEMBER your input needs to be in int; how do we cast an input to int
 weight = int(input("Okay, last question. How many pounds do you weight? "))
 
-##### DON"T MODIFY ANYTHING BELOW THIS LINE #####
 print("\n\n\n***********************")
 print("* Starbucks Addiction *")
 print("***********************")
@@ -47,9 +39,6 @@ sun_weight(weight)
 
 print("\nTHE END!\n\n")
 
-# Menu to run through all the different userless calculation
-# you pick what you like to calculate based on menu() options
-# Based on you are promted for a certain input
 option = None
 while option != 0:
     menu()

@@ -12,15 +12,15 @@ SUN_MULT = 27.1
 # Prints the number of Starbucks drinks you had since your birth
 def starbucks_addiction(first, last, age):
     # Convert first to be in upper case; What function should you use?
-    first_name_upper = ""
+    first_name_upper = first.upper()
     # Convert first to be in lower case; What function should you use?
-    first_name_lower = ""
+    first_name_lower = first.lower()
     # Calculate rounded number of drinks to nearest whole number
     # This can be done by multiplying age by DAYS_PER_YEAR
     # Remember to use the round() function
-    rounded_drinks = 0
+    rounded_drinks = round(age*DAYS_PER_YEAR)
     # Calculate the acutal number of cups without rounding
-    drinks = 0
+    drinks = age*DAYS_PER_YEAR
     print("Hello,",first+" "+last+"!","Did you know," \
             + " if you go to Starbucks everyday, since you were born," \
             + " you would have had about",rounded_drinks,"drinks")

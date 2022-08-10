@@ -13,7 +13,7 @@ def menu():
 # Returns a percentage
 def percentage(percent, whole):
     # calculate percentage 
-    percentage = 0
+    percentage = float(percent)*float(whole)/100
     return percentage
 
 # Calculates 15% and 20% Tips
@@ -22,13 +22,13 @@ def percentage(percent, whole):
 def tip_calculator(total_bill):
     print("\nWelcome to Tip Calculator")
     # calculate 15% tip using percentage function from above
-    fifteen_perc_tip = 0.00
+    fifteen_perc_tip = percentage(15, total_bill)
     # calculate 20% tip using percentage function from above
-    twenty_perc_tip = 0.00
+    twenty_perc_tip = percentage(20, total_bill)
     # calculate total bill original bill + 15% tip
-    bill_plus_15 = 0.00
+    bill_plus_15 = total_bill + fifteen_perc_tip
     # calculate total bill origianl bill + 20% tip
-    bill_plus_20 = 0.00
+    bill_plus_20 = total_bill + twenty_perc_tip
     # display calculation results
     print("If your total bill is $"+str(total_bill),"then: ")
     print("15% Tip is: $"+str(fifteen_perc_tip))
